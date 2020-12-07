@@ -16,16 +16,7 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    var render = Render.create({
-        element: document.body,
-        engine: engine,
-        options: {
-          width: 1200,
-          height: 700,
-          wireframes: false
-        }
-      });
-
+    
     ground = new Ground(600,590,1200,20);
     boy1 = new Boy(250,300);
 
